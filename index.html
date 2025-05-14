@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Kitchen - Authentic Thai Cuisine</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Thai Kitchen Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#menu" data-lang-key="menu">Menu</a>
+                <a href="#lunch" data-lang-key="lunch">Lounas</a>
+                <a href="#contact" data-lang-key="contact">Yhteystiedot</a>
+                <a href="#" class="lang-switch" data-lang="en">In English</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 data-lang-key="welcome">Tervetuloa Thai Kitcheniin</h1>
+            <p data-lang-key="welcomeText">Autenttista thaimaalaista ruokaa Turussa</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 data-lang-key="menu">Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all" data-lang-key="all">Kaikki</button>
+                <button class="category-btn" data-category="starters" data-lang-key="starters">Alkuruoat</button>
+                <button class="category-btn" data-category="curries" data-lang-key="curries">Curryt</button>
+                <button class="category-btn" data-category="wok" data-lang-key="wok">Wok</button>
+                <button class="category-btn" data-category="fish" data-lang-key="fish">Kalat</button>
+                <button class="category-btn" data-category="vegetarian" data-lang-key="vegetarian">Kasvis</button>
+                <button class="category-btn" data-category="others" data-lang-key="others">Muut</button>
+                <button class="category-btn" data-category="desserts" data-lang-key="desserts">Jälkiruoat</button>
+            </div>
+            <div class="menu-items">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Dietary Information Section -->
+    <section id="dietary" class="dietary">
+        <div class="container">
+            <div class="dietary-legend">
+                <h3 data-lang-key="dietaryInfo">Dietary Information</h3>
+                <div class="legend-items">
+                    <div class="legend-item">
+                        <span class="dietary-icon gluten-free">G</span>
+                        <span class="legend-text" data-lang-key="glutenFree">Gluteeniton</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="dietary-icon vegan">V*</span>
+                        <span class="legend-text" data-lang-key="veganOnRequest">Vegaaninen pyydettäessä</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lunch Section -->
+    <section id="lunch" class="lunch">
+        <div class="container">
+            <div class="lunch-info">
+                <div class="lunch-text">
+                    <div class="lunch-header">
+                        <h3 data-lang-key="lunchHours">Lounasbuffet</h3>
+                        <p class="lunch-time" data-lang-key="lunchTime">Ti-Pe 10:30-13:00</p>
+                    </div>
+                    <div class="lunch-details">
+                        <p data-lang-key="lunchIncludes">Lounaaseen kuuluu salaattipöytä, pääruokia sekä jälkiruoka ja kahvi.</p>
+                        <p class="lunch-price" data-lang-key="lunchPrice">Lounaan hinta 12,5€</p>
+                    </div>
+                </div>
+                <div class="lunch-menu-container">
+                    <iframe 
+                        src="https://docs.google.com/document/d/1GvtRAAXWKguwwIjqWKPZy5ctq9Y6fgj9EkJfyZ1WQpE/preview" 
+                        class="lunch-menu-iframe"
+                        allow="autoplay">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">I Sab</div>
+                            <div class="reviewer-meta">Local Guide • 42 reviews • 23 photos</div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="review-date">6 months ago</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>The best Thai restaurant in Turku. The food is great and the owners are so kind and friendly.</p>
+                        <div class="review-metrics">
+                            <span>Food: 5/5</span>
+                            <span>Service: 5/5</span>
+                            <span>Atmosphere: 5/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Hana B. Hamzah</div>
+                            <div class="reviewer-meta">Local Guide • 20 reviews • 10 photos</div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="review-date">a year ago</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Place is clean, service is good. Food is out of this world! We were brave to order "Thai level spicy", the cook delivered and our tongues were on fire. But food is so delicious. You can taste how fresh the ingredients are, meat is cooked perfectly. We would come back to try other dishes and definitely recommend this place for its authentic Thai taste.</p>
+                        <div class="review-metrics">
+                            <span>Food: 5/5</span>
+                            <span>Service: 5/5</span>
+                            <span>Atmosphere: 5/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">山田Keith</div>
+                            <div class="reviewer-meta">Local Guide • 861 reviews • 1384 photos</div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="review-date">a month ago</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Best Thai food in Finland!! Not only is the food great the service is also spectacular!! The meat is always so tender and they don't hold back the flavors and spice :) UPDATE: still the best!</p>
+                        <div class="review-metrics">
+                            <span>Food: 5/5</span>
+                            <span>Service: 5/5</span>
+                            <span>Atmosphere: 5/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Gallery items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-lang-key="contact">Yhteystiedot</h2>
+            <div class="contact-info">
+                <div class="address">
+                    <h3 data-lang-key="address">Osoite</h3>
+                    <p>Nuppulantie 43<br>20320, Turku</p>
+                </div>
+                <div class="hours">
+                    <h3 data-lang-key="openingHours">Aukioloajat</h3>
+                    <p>
+                        <span data-lang-key="monday">Ma: Suljettu</span><br>
+                        <span data-lang-key="tueFri">Ti-Pe: 10:30-19:00</span><br>
+                        <span data-lang-key="satSun">La-Su: 12:00-20:00</span>
+                    </p>
+                </div>
+                <div class="contact-details">
+                    <h3 data-lang-key="contact">Yhteystiedot</h3>
+                    <p>
+                        <span><i class="fas fa-phone"></i> +358 46 589 2245</span>
+                        <span><i class="fas fa-envelope"></i> thaicurryfood@outlook.com</span>
+                    </p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1968.2647973353684!2d22.2724071!3d60.4524097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76f139c08be5%3A0x5c7f5258b5d62e12!2sNuppulantie%2043%2C%2020320%20Turku!5e0!3m2!1sen!2sfi!4v1710271144973!5m2!1sen!2sfi"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/ThaikitchenbyLekki" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ravintolathaikitchen/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Thai Kitchen Logo" class="footer-logo-img">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
