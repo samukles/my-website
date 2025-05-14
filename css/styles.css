@@ -121,7 +121,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/kansikuvaoikea.jpg');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/Kansikuvaoikea.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
